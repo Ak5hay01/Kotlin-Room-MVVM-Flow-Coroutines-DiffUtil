@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SimpleRoomPersistanceDemo</string>
+    <string name="hint_word">Employee Name</string>
+    <string name="button_save">Save</string>
+
+    <string name="hint_number">Employee Number</string>
+    <string name="hint_address">Employee Address</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="empty_not_saved">Employee Not Saved</string>
+
+</resources>
