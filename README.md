@@ -3,7 +3,8 @@
 Room is a persistance library which you can use to save data in Android. the Room Persistance Library documentation link is as follows
 Link: https://developer.android.com/training/data-storage/room
 
-This Repository include a simple example of data saving into the database and doing CRUD operations on Employee object
+This Repository include a simple example of data saving into the database and doing CRUD operations on Employee object. If you try to add new employee you will not be able to see the delete menu in toolbar for an individual employee but if its edit/update functionality you will be able to delete the selected employee
+
 
 
 # Home Screen with Delete all functionality
@@ -16,7 +17,6 @@ Here as you can see i have added a recycler view which shows all the employess p
 ![alt text](/screenshots/add_screen.PNG)
 
 Here as you can see we can add new employee with information like Name, address and employee Id. I have used Name as primary key, but you can also use Id as Primary key. 
-
 # Update Employee
 
 ![alt text](/screenshots/edit_screen.PNG)
