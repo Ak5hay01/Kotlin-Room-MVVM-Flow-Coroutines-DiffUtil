@@ -17,6 +17,7 @@ class AddNewEmployee : AppCompatActivity() {
 
     private lateinit var emp:Employee
     private var empName:String? = null
+    var isEdit:Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +26,7 @@ class AddNewEmployee : AppCompatActivity() {
         val editName = findViewById<EditText>(R.id.edit_name)
         val editAddress = findViewById<EditText>(R.id.edit_address)
        val editNumber = findViewById<EditText>(R.id.edit_number)
-        var isEdit:Boolean = false
+
 
         intent?.getSerializableExtra("Employee")?.let {
             emp = (intent?.getSerializableExtra("Employee") as? Employee)!!
@@ -66,6 +67,8 @@ class AddNewEmployee : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
+        if (!isEdit)
+            return false;
         menuInflater.inflate(R.menu.menu_crud, menu)
         return true
     }
@@ -82,6 +85,8 @@ class AddNewEmployee : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
+
 }
 
 
